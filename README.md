@@ -3,26 +3,24 @@ The Hotel Room Booking System is a simple Django-based web application that allo
 
 ## Features
 
-Hotel & Room Management: View a list of hotels and available rooms.
+**Hotel & Room Management**: View a list of hotels and available rooms.
 
-Room Booking: Users can book rooms by selecting check-in and check-out dates.
+**Room Booking**: Users can book rooms by selecting check-in and check-out dates.
 
-Booking Validation: Prevents booking of already occupied rooms.
+**Booking Validation**: Prevents booking of already occupied rooms.
 
-Booking Cancellation: Cancelling a booking restores the room’s availability.
+**Admin Panel**: Allows hotel owners to manage hotels, rooms, and bookings.
 
-Admin Panel: Allows hotel owners to manage hotels, rooms, and bookings.
+**Search & Filtering**: Users can filter hotels based on location.
 
-Search & Filtering: Users can filter hotels based on location.
-
-Django Messages: Success and error notifications for a smooth user experience.
+**Django Messages**: Success and error notifications for a smooth user experience.
 
 ## Technologies Used
 
-Backend: Django (Python)
+**Backend**: Django (Python)
 
-Frontend: HTML, CSS (Bootstrap)
+**Frontend**: HTML, CSS (Bootstrap)
 
-Database: SQLite (can be switched to PostgreSQL or MySQL)
+**Database**: SQLite (can be switched to PostgreSQL or MySQL)
 
-Templates: Django Templates Engine
+**Templates**: Django Templates Engine
