@@ -1,0 +1,19 @@
+{% extends 'hotel/base.html' %}
+
+{% block content %}
+<h1>Available Hotels</h1>
+<div class="row">
+    {% for hotel in hotels %}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ hotel.name }}</h5>
+                    <p class="card-text">{{ hotel.location }}</p>
+                    <a href="{% url 'room_list' hotel.id %}" class="btn btn-primary">View Rooms</a>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

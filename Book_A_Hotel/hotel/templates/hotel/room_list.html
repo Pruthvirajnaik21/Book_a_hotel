@@ -1,0 +1,17 @@
+{% extends 'hotel/base.html' %}
+
+{% block content %}
+<h1>Rooms at {{ hotel.name }}</h1>
+<div class="row">
+    {% for room in rooms %}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Room {{ room.room_number }}</h5>
+                    <a href="{% url 'book_room' room.id %}" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
